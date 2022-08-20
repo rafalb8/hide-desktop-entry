@@ -53,6 +53,10 @@ func main() {
 	fmt.Print("==> ")
 	toHide := RangesSlice(ReadRanges(), list)
 
+	if len(toHide) <= 0 {
+		return
+	}
+
 	fmt.Println("========================")
 	fmt.Println("Entries to be hidden:")
 	for _, v := range toHide {
